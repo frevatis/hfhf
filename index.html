@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Мои работы</title>
+    <link rel="stylesheet" href="style/sty.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Stack+Sans+Text:wght@200..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="comn">
+        <div class="head">
+        
+            <div class="verx">
+                <img src="style/images/KFC_logo_2024.svg" alt="ffffff">
+                <div class="ttr">
+                <p>Меню</p>
+                <p>Купоны</p>
+                <p>Акции</p>
+                <p>Рестораны</p>
+                <p>Новости</p>
+                </div>
+            </div>
+               
+        </div>
+        <div class="foto">
+
+            <div class="mont">
+                <img src="style/images/re1.png" alt="ff">
+                <div class="squar">
+                    <p id = 'one'></p>
+                    <p id = 'two'></p>
+                    <p id = 'three'></p>
+                    <p id = 'four'></p>
+                </div>
+                <div class="but" >
+                    <button id = 'butt'><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="nonbut">
+                    <button id = "nonbutt"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+            </div>
+
+
+            <div class="kaj">
+                <img src="c:\Users\адель\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{EF5362D6-C605-4E8D-BC35-53BE14E2C47F}.png"
+                    alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="menu">
+        <div class="tt">
+            <h1>Меню</h1>
+        </div>
+        <div class="rasp">
+            <p>Новинки</p>
+            <p>Сэндвичи</p>
+            <p>Комбо и ланчи</p>
+            <p>Баскеты</p>
+            <p>Бургеры</p>
+            <p>Роллы</p>
+            <p>Сочная курица</p>
+            <p>Картофель и снеки</p>
+            <p>Xолодные напитки </p>
+        </div>
+        <div class="kfo">
+            <img src="c:\Users\адель\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{F832969E-9BD8-4C37-976F-9E730AC06BEB}.png" alt="">
+        </div>
+        <div class="tkf">
+            <img src="c:\Users\адель\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{A61CD3CA-C2C5-4658-BDA1-293D35660574}.png" alt="">
+        </div>
+        <div class="p">
+            <h2>Новинки</h2>
+            
+        </div>
+        <div class="card">
+            <div class="menush">
+                <img src="c:\Users\адель\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{8EDEB63D-8A0A-4A05-88E2-DA49AB0DB0A4}.png" alt="">
+
+            </div>
+            <div class="menush" >
+                <img   src="c:\Users\адель\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{76B5B65E-0A31-44B5-AF32-579D98CE0EC8}.png" alt="">
+                
+            </div>
+            <div class="menush" >
+                <img id ='gazan' src="c:\Users\адель\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{320EE037-76EF-44DD-AC6A-AC0230F46FBC}.png" alt="">
+                
+            </div>
+            <div class="menush">
+                <img src="c:\Users\адель\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{8EDEB63D-8A0A-4A05-88E2-DA49AB0DB0A4}.png" alt="">
+                
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="formi">
+            <form action="https://formsubmit.co/adelhalitov1@gmail.com" method="POST">
+            <input type="text" id="name" placeholder="Ваше имя" >
+            <input type="email"id ='email' placeholder="Ваш email">
+             <textarea id="message" rows="4" placeholder="Сообщение" required></textarea>
+             <button>Отправить</button>
+             <input type="text" name="_honey" style="display:none">
+            </form>
+        </div>
+    </div>
+    </div>
+    <script>
+  let one = document.querySelector('#one');
+let two = document.querySelector('#two');
+let three = document.querySelector('#three');
+let four = document.querySelector('#four');
+
+let butt = document.querySelector('#butt');
+let nonbutt = document.querySelector('#nonbutt');
+let img = document.querySelector('.mont img');
+
+let images = [
+    'style/images/re1.png',
+    'style/images/re2.png',
+    'style/images/re3.png',
+    'style/images/re4.png'
+];
+let current = 0;
+const total = images.length;
+
+function updateDots() {
+    let dots = [one, two, three, four];
+    dots.forEach((dot, i) => {
+        dot.style.width = '10px';
+        dot.style.height = '10px';
+        dot.style.backgroundColor = 'rgb(63, 63, 63)';
+    });
+    dots[current].style.width = '15px';
+    dots[current].style.height = '15px';
+    dots[current].style.backgroundColor = 'red';
+}
+
+function updateButtons() {
+    // Левая стрелка
+    if (current === 0) {
+        nonbutt.style.opacity = '0.3';
+        nonbutt.style.pointerEvents = 'none';
+        nonbutt.style.backgroundColor = 'rgba(0,0,0,0.24)';
+       
+    } else {
+        nonbutt.style.opacity = '1';
+        nonbutt.style.pointerEvents = 'auto';
+        nonbutt.style.backgroundColor = 'black';
+         nonbutt.style.color = 'white'
+    }
+    
+    // Правая стрелка
+    if (current === total - 1) {
+        butt.style.opacity = '0.3';
+        butt.style.pointerEvents = 'none';
+        butt.style.backgroundColor = 'rgba(0,0,0,0.24)';
+    } else {
+        butt.style.opacity = '1';
+        butt.style.pointerEvents = 'auto';
+        butt.style.backgroundColor = 'black';
+    }
+}
+
+function changeImage(index) {
+    img.style.opacity = '0';
+    setTimeout(() => {
+        img.src = images[index];
+        img.style.opacity = '1';
+    }, 200);
+}
+
+butt.onclick = () => {
+    if (current < total - 1) {
+        current++;
+        changeImage(current);
+        updateDots();
+        updateButtons();
+    }
+};
+
+nonbutt.onclick = () => {
+    if (current > 0) {
+        current--;
+        changeImage(current);
+        updateDots();
+        updateButtons();
+    }
+};
+
+updateDots();
+updateButtons();
+document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelectorAll('.comn, .menu').forEach(card=>{
+        card.classList.add('vasib')
+    })
+})
+
+let btn = document.querySelector('#btn')
+btn.onclick = function(){
+    document.body.classList.toggle('dark')
+
+    if(document.body.classList.contains('dark')){
+        btn.innerHTML = '☀️ Светлая тема'
+    }
+    else{
+         btn.innerHTML = '🌙 Темная тема'
+    }
+
+}
+    </script>
+
+
+</body>
+
+</html>
